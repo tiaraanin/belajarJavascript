@@ -130,4 +130,20 @@ variable.namapropertis
 -Kadang kita butuh banyak kondisi maka bisa menggunakan else if 
 ##ifexpression.html
 
-#
+#ALERT,PROMPT , dan CONFIRM
+-Alert : Memberi peringatan pop up teks di browser
+-Prompt : Meminta input string dari pengguna browser dalam bentuk popup input text
+-confirm : meminta input boolean dari pengguna browser dalam bentuk input pilihan
+##popup.html
+
+#undefined 
+-kata kunci di javascript 
+-adalah salah satu tipedata javascript
+-undefined merepresentasikan variabel yang belum didefinisikan nilainya 
+-undefined bebrda dengan null
+##undefined.html
+
+$NULL
+-representasi data kosong 
+-Null berarti variable sudah memiliki nilai hanya saja valuenya null / kosong
+-kalau undefined adalah variable belum ditambahkan value apapun
