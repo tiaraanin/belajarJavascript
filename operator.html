@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OPERATOR ARITMATIKA
+        let result = 1 + 2 
+        document.writeln("<p>1+2 = " + result + "</p>")
+        let originalResult = result
+
+        result = result- 1
+        document.writeln("<p>" + originalResult + "-1 = " + result + "</p>")
+        originalResult = result
+
+        result = result *2
+        document.writeln(originalResult+" * 2 = "+result)
+    
+        document.writeln("</br>" + "</br>" )
+
+        //OPERATOR UNARY
+        let hasil = +1
+        document.writeln(hasil)
+
+        hasil--
+        document.writeln(hasil)
+
+        hasil++
+        document.writeln(hasil)
+
+        hasil =- hasil
+        document.writeln(hasil)
+
+        document.writeln("</br>" + "</br>" )
+
+        //OPERATOR PERBANDINGAN
+        let nilai = 5 =="5"
+        document.writeln(nilai)
+
+        nilai = 5 ==="5"
+        document.writeln(nilai)
+
+        nilai >10 
+        document.writeln(nilai)
+        
+        nilai= 5 < 10
+        document.writeln(nilai)
+
+        //OPERATOR LOGIKA
+        const nilaiUjian = 90
+        const nilaiabsen = 90
+
+        const lulusUjian = nilaiUjian > 75
+        document.writeln(lulusUjian)
+        const lulusAbsen = nilaiabsen > 75
+        document.writeln(lulusAbsen)
+
+        const lulus = lulusUjian && lulusAbsen
+        document.writelnln(lulus)
+    </script>
+    
+</body>
+</html>

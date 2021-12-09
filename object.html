@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {}
+
+        //ubah propertu/atribute
+        person["nama"] = "Maulana Reza"
+        person["alamat"] = "Indonesia"
+        person["umur"] = 30
+        
+        console.table(person)
+
+        delete person["umur"]
+
+        //membuat array asosiatif juga bisa dengan cara beriktu
+        const orang ={
+            nama : "Maulana Ahmad Fahreza",
+            alamat : "Indonesia",
+            Umur : 19,
+            "pekerjaan sekarang" : "mahasiswa"
+        }
+        console.table(orang)
+
+        //mengambil nilai suati array assosiatif
+        console.info(`Nama : ${orang.nama}`)
+        console.info(`alamat : ${orang.alamat}`)
+        console.info(`umur : ${orang.Umur}`)
+        //kalau properties 2 kata atau lebih bisa pake cara ini
+        console.info(`pekerjaan sekarang : ${orang["pekerjaan sekarang"]}`)
+    </script>
+</body>
+</html>

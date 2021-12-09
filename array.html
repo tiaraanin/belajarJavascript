@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arraykosong = []
+        let arraynama = ['Reza','Rahmat','Aji']
+
+        const names=[]
+        names.push("Reza")
+        names.push("Rahmat","Naufal")
+
+        console.table(names)
+        //mengambil data array
+        console.info(names[0]) 
+        console.info(names[1])
+        console.info(names[2])
+        //mengubah data array suatu indeks
+        names[0]="Maulana"
+        console.table(names)
+        //menghapus data array suatu indeks
+        //perlu diingat jika kita hapus data indeks tertentu maka jika kita tambahkan data
+        //lagi maka indeks akan terus bertambah
+        delete names[1]
+        console.table(names)
+        names.push("Zidan")
+        //kita bisa mengedit indeks yang telah di hapus dengan menambahkan data baru
+        names[1]="Ahmad"
+        console.table(names)
+        //bisa memasukan array lagi di dalam array (multi dimensi)
+
+        names.push(['Siapa','Ya','Ini'])
+        console.table(names)
+    </script>
+</body>
+</html>

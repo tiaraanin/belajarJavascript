@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const value1 = parseInt("1")
+        const value2 = 1
+        const sum = value1 + value2
+
+        document.writeln(`<p> ${sum} </P>`)
+        document.writeln(`<p> ${parseInt("1.1")} </P>`)
+        document.writeln(`<p> ${parseFloat("1.15")} </P>`)
+            document.writeln(`<p> ${Number("1.1")} </P>`)
+
+        
+        const a = 1
+        const b = 6 
+        const total = a.toString() + b.toString()
+        document.writeln(total)
+
+        document.writeln(`<p> ${parseInt("1Salah")}</p>`) // kalau pake parseint/float ada toleransi yang awal misal number akan dieksekusi awalnya saja
+        document.writeln(`<p> ${parseFloat("1.1Salah")}</p>`)
+        document.writeln(`<p> ${parseInt("a1Salah")}</p>`)
+
+      document.writeln(`<p> ${Number("1Salah")}</p>`) //kalau pake number tidak ada toleransi
+      document.writeln(`<p> ${Number("1.1Salah")}</p>`) //kalau pake number tidak ada toleransi
+      document.writeln(`<p> ${Number("Salah")}</p>`) //kalau pake number tidak ada toleransi
+      
+      const first = Number("salah")
+      const second = first + 100
+
+      document.writeln(second)
+
+      document.writeln(`<p> ${isNaN(1)}</p>`) //isNaN False kjarena bukan NaN
+      document.writeln(`<p> ${isNaN('angka')}</p>`) // isNaN True karena NaN
+
+      //NaN di operasikan dengan bilangan apapun hasilnya tetap Nan
+
+
+    </script>
+</body>
+</html>
