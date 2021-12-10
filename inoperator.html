@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName: "Maulana",
+            lastName: "Reza"
+        }
+
+        if ("firstName" in person){
+            alert("HELLO")
+        }
+        else{
+            alert("NOT IN BRO")
+        }
+
+        const student={
+            firstName: "Maulana",
+            middleName : "Ahmad",
+            lastName : "Reza"
+        }
+        if ("middleName" in student) {
+            alert("Middle Name In Student")
+        }
+        else{
+            alert("Cannot Find Middle Name In Student")
+        }
+        const nama = [null,"Rahmat",undefined]
+        const fetch = nama[0]
+        if (fetch in nama) {
+            document.writeln(fetch)
+        }
+        else{
+            document.writeln(nama[0])
+        }
+    </script>
+</body>
+</html>

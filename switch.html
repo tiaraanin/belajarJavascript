@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nilai = "A"
+        //jika pakai switch ekspression
+        switch (nilai){
+            case "A":
+                document.writeln(`<p> ANDA LULUS DENGAN NILAI BAIK </p>`)
+                break
+            case "B":
+                document.writeln(`<p> ANDA LULUS  </p>`)
+                break
+            case "C":
+                document.writeln(`<p> ANDA TIDAK LULUS </p>`)
+                break
+            default: 
+                document.writeln(`<p> ANDA SALAH JURUSAN </p>`)
+        }       
+
+        //jika pakai IF Ekspression
+        if (nilai == "A") {
+            document.writeln(`<p> ANDA LULUS DENGAN NILAI BAIK </p>`)
+        }
+        else if (nilai == "B") {
+            document.writeln(`<p> ANDA LULUS </p>`)
+        }
+        else if (nilai == "C") {
+            document.writeln(`<p> ANDA TIDAK LULUS </p>`)
+        }
+        else{
+            document.writeln(`<p> SALAH JURUSAN</p>`)
+        }
+    </script>
+</body>
+</html>

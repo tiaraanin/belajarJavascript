@@ -1,35 +1,33 @@
-#Membuat Kode Javascript bisa dilakukan dengan  dua cara yaitu :
+@Membuat Kode Javascript bisa dilakukan dengan  dua cara yaitu :
 -Langsung di file HTML dengan menambahkan tag <scripts></scripts>
 di file lain dengan cara menambahkan file script.js kemudian pada <scripts src=" >
 
-#TITIK KOMA
+@TITIK KOMA
 -dalam javascript tidak wajib titik koma namun disarankan konsisten pakai atau tidak.
-
-#KOMENTAR
+@KOMENTAR
 -KOde programyang tidak akan di eksekusi 
 -digunakan sebagai informasi tambahan atau petunjuk dan dokumentasi 
 -komentar bisa menggunakan //(satu baris komentar) atau /* banyak baris komenta */
 ## komentar.html
 
-#TIPE DATA
+@TIPE DATA
 -Pada JS hanya mendukung tipe data number dimana bisa untuk bilangan bulat dan desimal
-#NUMBER NOTATION 
+@NUMBER NOTATION 
 -JS mendukung notasi biner oktal dan hexa
     Hexadecimal : 0xFF
     Binary : 0b01010
     oktal : 0o18
 ##tipedata.html
 
-#TIPE DATA BOOLEAN
+@TIPE DATA BOOLEAN
 -Tipe data bollean berisi benar atau salah(True & False)
-
-#TIPE DATA STRING
+@TIPE DATA STRING
 -Berisi kumpulan kosong atau lebih karakter
 -dalam menuliskan String bisa digunakan petik dua ("string") atau petik satu ('string')
 -untuk menambahkan string bisa digunakan + diantara 2 string 
 ##boleanstring.html
 
-#VARIABLE
+@VARIABLE
 -Variabel adalah temapt untuk menyimpan data
 -membuat variabel di javascript dengan cara var diikuti nama variabel
 -variabel bisa di ubah-ubah tipe datanya
@@ -39,7 +37,7 @@ di file lain dengan cara menambahkan file script.js kemudian pada <scripts src="
 #KODE JAVA SCRIPT JIKA LINE ATAS NYA EROR MAKA TIDAK AKAN DILANJUTKAN KEBAWAHNYA
 ##variable.html
 
-#OPERATOR ARITMATIKA
+@OPERATOR ARITMATIKA
 ini sama kayak python + - * ** / %
 #OPERATOR AUGMENTED ASSIGNMENT
 kaya +=1 -=1 DSt
@@ -48,57 +46,57 @@ kaya +=1 -=1 DSt
 - menandakan nilai negatif
 ++ increment manaikkan 1 angka
 -- decrement menurutnkan 1 angka
-#OPERASI PERBANDINGAN 
+@OPERASI PERBANDINGAN 
 -Operasi perbandingan membandingkan 2 variabel dengan keluaran True atau False
 > < >= <= ==(samadengan) ===(sama dengan dan sama tipe misal 1 dan "1" maka false)
 != (Tidak sama dengan) !==(Tidak sama dengan atau tidak sama tipe)
-#OPERATOR LOGIKA
+@OPERATOR LOGIKA
 &&(DAN) ||(ATAU) !(Kebalikan)
 ##operator.html
 
-#CONSOLE
+@CONSOLE
 -fitur untuk logging
 -logging adlah mekanisme yang baisa dilakukan untuk menampilkan informasi dari aplikasi yang sedang berjalan tanpa harus menunggu
  mengganggu alur kerja aplikasi dan juga interaksi user
 - bisa denganmenggunakan fitur console Javascript
-#Console Methode
+@Console Methode
 -console.info(...) memberitahu informasi
 -console.warn(...) memberitahu informasi peringatan
 -console.error(...) memberitahu informasi error
 -console.table(...) memberitahu informasi dalam bentuk table
 ##console.html
  
-#STRING TEMPLATE
+@STRING TEMPLATE
 -JS memiliki fitu String Template dimana kita bisa mensubtitusi data dari luar string ke dalam string
  seperti mengambil data varaiable, atau bahkan melakukan operasi matetmatika
 - untuk menggunakan string template cara pembuatan stringnya harus menggunakan ` (backtick),
 bukan '(petik satu) atau "(Petik dua)
 ##stringtemplate.html
 
-#KONVERSI STRING DAN NUMBER
+@KONVERSI STRING DAN NUMBER
 -parseInt(string) : Mengkonversi dari string ke integer
 -parseFloat(string) : mengkonversi dari string ke Float
 -Number(string) : Mengkonversi dari string ke number int/float
 -number.toString() : mengkonversi dai number ke string
-#Nan :
+@NaN NOT A NUMBER
 -kejadian jika konversi data yang tidak valid 
 -Not a Number adalah number spesialyang menyebutkan jika ini bukan number
 - NaN di operasikan dengan NaN akan menghasilkan NanN
-#isNan() Function
+@isNan() Function
 -untuk mengecek apakah sebuah number itu Nan atau bukan
 -isNaN(number)
 -Hasilnya True atau False
 ##konversi.html
 
-#Tipe Data Array
+@Tipe Data Array
 -Array berisi kumpulan data 
 -Array bersifat dinamis(data bisa bertambah dengan sendirinya saat kita memasukkan data kedalam array)
 -setiap array disimpan dalam posisi berurutan dimulaiu dari indeks 0
 -Setiap penambahan data ke array, data terakhir akan masuk ke dalam indeks terakhir
-#Menambah Array
+@Menambah Array
 variabel.push("datamu")
 variabel.push("data1","data2")
-#Daftar Operasi di Array
+@Daftar Operasi di Array
 variabel.push(value) Menambahkan data ke Array
 variabel.lenght Mendapatkan Panjang array
 array[index] mendapatkan data posisi index tertentu
@@ -106,12 +104,12 @@ array[index]=valuebaru mengubah data di posisi index tertentu
 delet3 array[index] menghapus data di posisi index, namun index tidak bergeser
 ##array.html
 
-#Tipe Data Object
+@Tipe Data Object
 -mirip dengan tipe data array. 
 -indeks berupa string atau number
 -indeks di object disebut attribute atau properties bukan indeks
-#Membuat object kosong {}
-#Mengubah Property di object
+@Membuat object kosong {}
+@Mengubah Property di object
 variable["properties1"] = "Value1"
 variable["properties2"] = "value2"
 #menghapus property di object
@@ -120,7 +118,7 @@ delet3 variable["properties"]
 variable.namapropertis
 ##object.html
 
-#If Expression
+@If Expression
 -percabangan artinya bisa mengeksekusi suatu kondisi jika terpenuhi
 -hampir semua bahasa pemrograman mendukung if ekspression 
 #Else 
@@ -130,20 +128,67 @@ variable.namapropertis
 -Kadang kita butuh banyak kondisi maka bisa menggunakan else if 
 ##ifexpression.html
 
-#ALERT,PROMPT , dan CONFIRM
+@ALERT,PROMPT , dan CONFIRM
 -Alert : Memberi peringatan pop up teks di browser
 -Prompt : Meminta input string dari pengguna browser dalam bentuk popup input text
 -confirm : meminta input boolean dari pengguna browser dalam bentuk input pilihan
 ##popup.html
 
-#undefined 
+@undefined 
 -kata kunci di javascript 
 -adalah salah satu tipedata javascript
 -undefined merepresentasikan variabel yang belum didefinisikan nilainya 
 -undefined bebrda dengan null
 ##undefined.html
 
-$NULL
+@NULL
 -representasi data kosong 
 -Null berarti variable sudah memiliki nilai hanya saja valuenya null / kosong
 -kalau undefined adalah variable belum ditambahkan value apapun
+##null.html
+
+@SWITCH STATEMENT
+-Switch adalah struktur percabangan sama sperti if namun lebih sederhana dalam cara pembuatannya
+-kondisi di switch adalah perbandingan == 
+##switch.html
+
+@OPERATOR TYPEOF
+-operator yang bisa digunakan uyntuk melihat tipe data sebuah value atau variable
+-Hasil dari typeof adalah string tipe datanya 
+##typeof.html
+
+@IN OPERATOR
+-adalah operator yang bisa dilakukan untuk menegcek apakah sebuah property di dalam sebuah objek atau tidak
+-bisa juga untuk mengecek indeks di array
+-Tidak bisa membedakan apakah object tersebut atau value dalam suatuvariabel ada atau tidak 
+##inoperator.html
+
+@TENARY OPERATOR
+-adalah operator sederhana seperti if statement
+-jika TRUE maka kondisi nilai pertama yang diambil, jika False maka nilai kedua yang diambil
+##ternary.html
+
+#NULLISH COALESCING OPERATOR
+-Nullist value adalah null dan undefined
+-Nullist Coalescing operator (??) kondisinya null atau undefined
+##nullish.html
+
+@OPTIONAL CHAINING
+-Operator Tanda tanya merupakan operator yg digunakan uyntuk mengamankan
+ ketika kita inign mengakses sebuah object dari data nullish
+-Biasanya jika mengakses property object dari data nullish tanpa menggunakan optional chaining
+ operator biasanya akan terjadi error
+##optionalchaining.html
+
+@FALSY
+-kadang ditulis Falsey adalah value yang ketika dalam konteks boolean, dia dianggap false 
+-Data Falsy (Data yang dianggap false :
+    false = boolean false
+    0,-0 = number 0 dan -0 dianggap false
+    "",'',`` = semua string kosong dianggap false
+    null = null dianggap false
+    undefined = undefined dianggap false
+    NaN = Not a Number dianggap False
+@THRUTLY
+-Kebalikan dari Falsy 
+##falsytruthly.html
