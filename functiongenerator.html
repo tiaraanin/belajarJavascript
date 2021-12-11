@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //contoh 1
+        function * createName(){
+            yield "Maulana"
+            yield "Ahmad"
+            yield "Fahreza"
+        }
+        document.writeln(createName())
+        const names = createName()
+        for(let nama of names){
+            document.writeln(nama)
+            console.log(nama);
+        }
+
+        //contoh 2
+        //lazy generator : dia akan mengekskusi console log dulu di baris 29 kemudian masuk ke 26 kemudian kembali lagi ke looping
+        //berbeda dengan array dimana dia akan menyelesaikan looping dahulu kemudian menyimpan dalam array kosong dan masuk ke baris 26
+        function * buatGanjil(value){
+        for(let i = 1; i<=value; i++){
+            if ( i % 2 === 1 ){
+                console.log(`yield ${i}`);
+                yield i
+            }
+            
+        }
+        }
+
+        const numbers = buatGanjil(100)
+        for (const i of numbers){
+            console.log(i);
+        }
+
+        function  buatGanjilArray(value){
+        const array=[]
+        for(let i = 1; i<=value; i++){
+            if ( i % 2 === 1 ){
+                console.log(`yield ${i}`);
+                array.push(i)
+            }
+            
+        }
+        return array
+        }
+
+        const nomor = buatGanjilArray(100)
+        for (const i of nomor){
+            console.log(i);
+        }
+
+    </script>
+</body>
+</html>

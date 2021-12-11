@@ -96,6 +96,44 @@
         
         //pake spread syntax
         sum("Banana",...[10,10,10,10,10]) //ditambahin titik tiga kemudian diikuti array agar bisa di proses di REST Parameter
+
+        //ARGUMENTS FUNCTION
+        function oldSum(){
+            let total = 0
+            for(const argument of arguments){
+                total += argument
+            }
+            document.writeln(`<p> Total is ${total}`)
+        }
+
+        oldSum(1,2,3,4,5)
+        
+        //FUNCTION SEBAGAI PARAMETER
+        function katakanNama(nama){
+            document.writeln(`<p>Hallo ${nama}`)
+        }
+        let katakan = katakanNama //menyimpan fungsi dalam variabel tanpa tanda ()
+        katakan("REZAAAAA")
+
+        function giveMeName(callback){
+            callback("Rezaaasd")//seolah olah callback menjadi katakanNama("rezaaaasd")
+            
+        }
+        giveMeName(katakanNama)
+
+        //Anonymous Function
+            //Variabel
+        const namaSiapa = function(nama){
+            document.writeln(`<p> Hello ${nama}`)
+        }
+    namaSiapa("AHMADDD")
+            //Parameter
+        function namasaya (callback){
+            callback("EKO")
+        }
+        namasaya(function(nama){
+            document.writeln(`<p> Hi ${nama}`)
+        })
     </script>
 </body>
 </html>

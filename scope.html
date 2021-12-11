@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ini adalah global scope bisa di akses dimana pun
+        let counter = 0 
+        function hitme(){
+            //ini adalah local scope hitme dimana blok program di bawah hanya bisa di akses dalam function ini
+            let firstVariable = "RezaAaAa"
+            counter ++ //ini bisa di akses karena counter bedada dalam global scope
+            function firstNested(){
+                console.log(firstVariable);
+            }
+            firstNested()
+        }
+        //global scope
+
+        function other(){
+            //ini adalah local scope other
+            let secondVariable = "Maulana"
+        }
+
+        hitme()
+        hitme()
+        console.log(counter);
+
+        // console.log(firstVariable);//ini akan error karena global mengakses local
+        // console.log(secondVariable);//ini juga akan error karena tidak dikenali
+    </script>
+</body>
+</html>

@@ -278,3 +278,19 @@ variable.namapropertis
     -digunakan untuk merubah data array kedalam rest parameter
     -kita bisa gunakan ...(titik tiga) diikuti dengan arraynya ketika memanggil function
     -array = ...[value1,value2,dst]
+@ARGUMENTS OBJECT
+-Fitur ini jarang digunakan semenjak adanya REST Parameter
+-ini adlaah fitur dimana kita bisa mengambil semua parameter dalam array menggunakan object bernama arguments
+-arguments secara otomatis bisa digunakan di function 
+@FUNCTION SEBAGAI VARIABEL
+-Function tidak hanya bisa digunakan sebagai kode program yang dieksekusi, tetapi bisa juga sebagai value
+-Artinya function bisa disimpan didalam variable, bisa juga dikirim melalui parameter ke function lain
+@ANONYMOUS FUNCTION
+-function tanpa nama 
+-kita bisa buat anonymous function dalam sebuah varibale atau bisa juga kita byuat ketika mengisi parameter
+-bisa disimpan dalam variabel atau di parameter
+##Function.html
+
+@FUNCTION DALAM FUNCTION (NESTED FUNCTION)
+-Ketika kita membuat Function dalam function maka function di dalam disebut inner function 
+- inner function hanya bisa diakses di tempat kita membuat function nya, tidak bisa di akses diluar function itu 
