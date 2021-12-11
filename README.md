@@ -1,0 +1,2 @@
+# belajarJavascript
+FIRST OPEN INTRO TO SEE LEARNING NOTE!
