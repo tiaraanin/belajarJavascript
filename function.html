@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sayHelloWorld(parameter){
+            document.writeln(`<p>Hello ${parameter}`)
+        }
+        sayHelloWorld()
+        //kalau mau pake parameter
+        a = prompt('Masukan Nama Anda')
+        sayHelloWorld(a)
+        //kalau mau pake return
+        function hello(){
+            say = "Hallo Bro ini adalah pengembalian degan return value"
+            return say
+        }
+
+        document.writeln(hello())
+        //function parameter ditambah return value
+        function namaku(firstName,lastName){
+            nama= `<p>Namaku adalah ${firstName} ${lastName}`
+            return nama
+        }
+        variabel = namaku("Maulana","Reza")
+        document.writeln(variabel)
+        //return multi value dalam kondisi
+
+        function getfinalscore(value){
+            if(value >90){
+                return "A"
+                return "B" //ini tidak akan di eksekusi
+            } else if (value>80){
+                return "B"
+            } else if(value>70){
+                return "C"
+            } else if(value>60){
+                return "D"
+            } else {
+                return "Niat sekolah opo ra?"
+            }
+            // satu function hanya bisa mereturn 1 value kecuali dia di pakein pengkondisian if elseif dll
+        }
+        get = prompt("Berapa Nilai Kamu ? :")
+        document.writeln(`<p> Nilai Kamu adalah : ${get}
+            dengan grade : ${getfinalscore(get)}`)
+
+        //function return value untuk menghentikan perulangan
+
+        function cekNilaiArray(array,nilaiygdicari){
+            for(let i of array){
+                if (i == nilaiygdicari) {
+                    return a = "Nilai yang dicari ada dalam Array"
+                }
+            }
+            return a = "nilai yang dicari tidak ada dalam Array"
+        }
+        cek = cekNilaiArray([1,2,3,4,5,6,7],9) //Akan mereturn apakah nilai ada dalam array atau tidak
+        document.writeln(cek)
+
+        //memberi default value ke parameter
+        function register(nama, gender="Jantan"){
+            console.log(nama);
+            console.log(gender);
+        }
+        register()
+        register("Reza")
+        register("Reza","LAKIKK!!")
+        register("Reza",null)//null akan di ekseskusi karena sudahj ada nilai tapi kosong
+
+        //Function REST PARAMETER
+        function sum(name,...data){
+            let total = 0
+            for (const element of data){
+                console.log(element);
+                total+=element
+            }
+            document.writeln(`<p>Total ${name} is ${total}`)
+        }
+        sum("Orange",10,12,14,165,78,214,)//data pertama masuk ke parameter name kemudian data selanjutnya masuk sebagai array ke parameter data sehingga bisa di looping for
+            //Ini sama seperti kayak gini
+            function sumit(name,data){
+            let total = 0
+            for (const element of data){
+                console.log(element);
+                total+=element
+            }
+            document.writeln(`<p>Total ${name} is ${total}`)
+        }
+        sumit("Orange(tanpa REST Parameter)",[10,12,14,165,78,214])
+        
+        //pake spread syntax
+        sum("Banana",...[10,10,10,10,10]) //ditambahin titik tiga kemudian diikuti array agar bisa di proses di REST Parameter
+    </script>
+</body>
+</html>

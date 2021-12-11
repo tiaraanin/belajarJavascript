@@ -192,3 +192,89 @@ variable.namapropertis
 @THRUTLY
 -Kebalikan dari Falsy 
 ##falsytruthly.html
+
+@OPERATOR LOGIKA DI NON BOOLEAN
+-OR(||) Akan mengambil nilai pertama yang true dari kiri ke kanan 
+-Jika tidak ada yg true maka akan mengambil yang kanan 
+-AND(&&) Akan mengambil nilai pertama yang falsy
+-jika tidak ada satupun yng falsy maka yang terakhir yang diambil
+##operatornonboolean.html
+
+@FOR LOOP
+-For adalah salah satu kunci yangbisa digunakan untuk melakukan pengulangan
+-Kondisi for akan selalu diulangi selama kondisi terpenuhi
+-for(init statement;kondisi;post statement)
+    init statement : akan dieksekusi sekali diawal sebelum perulangan
+    Kondisi akan dilakukan pengecekan dalam setiap perulangan, jika True maka akan dilakukan jika false berhenti
+    post statement akan dieksekusi setiap kali diakhir perulangan 
+##forloop.html
+
+@WHILE LOOP
+-Hanya terdapat 1 kondisi perulangan tidak ada init dan post statement
+##whileloop
+
+@DO WHILE LOOP
+-mirip dengan while
+-pengecekan kondisi dilakukan setelah perulangan 
+-Oleh karena itu dalam do while loop minimal satu kali perulangan dilakukan walaupun kondisi tidak bernilai true
+##dowhileloop.html
+
+@BREAK CONTONUE
+-Breah dalam switch statement digunakan untuk menghentikan CASE
+-Pada perulangan Break digunakan untuk mengentikan seluruh perulangan 
+-Continue digunakan untuk menghentukan perulangan saat ini lalu melanjutkan ke perulangan selanjutnya
+##break.html dan continue.html
+
+@LABEL
+-merupakan penanda yang dapat digunakan dengan kata kunci brak dan continue
+-secara defaul saat melakukan break atau continue dia akan dieksekusi pada perulangan dimana kode tersebut berada
+-dengan menggunakan label kita dapat melakukan break dan continue terhadap perulangan yang kita ingin kan asalkan pada perulangan tersebut digunakan label
+-cara membuat label = nama_label :(titikdua)
+##label.html
+
+@FOR IN 
+- merupakan perulangan for yang digunakan untuk mengiterasi seluruh data property di object atau index array
+-yg diambil nama property bukan nilai (object)
+@FOR OF
+-digunakan untuk iterasai terhadap isi value dari iterable object, seperti array, string dll
+-for of tidak bisa digunakan untuk melakukan iterasi data di object, karena object bukan iterable
+##forin.html
+
+@W!TH STATEMENT
+-fitur yang digunakan untuk menurunkan sebuah scope data
+-dengan ini kita bisa mengakses property dalam sebuah data tanpa harus menyebut datanya
+##withstatement.html
+
+@FUNCTION
+-adalah blok kode program yang akan berjalan saat kita panggil
+-untuk membuat function kita bisa menggunakan kata kunci function lalu diikuti nama function,kurung() dan diakhiri {}
+-kita bisa memanggil function dengan menggunakan nama function lalu diikuti tanda kurung()
+@FUNCTION PARAMETER
+-kita bisa mengirim informasi ke function yang ingin kita panggil
+-untuk melakukan hal tersebuyt, kita perlu menambahkan parameter atau argument di function yang sudah kita buat
+-parameter ditempatkan di dalam kurung() di deklarasi function
+-jika punya lebih dari 1 parameter bisa menggunakan tanda koma (,)
+@FUNCTION PARAMETER
+-Secara defaul, function itu tidak menghasilkan value apapun
+-agar function bisa menghasilkan value, kita bisa menggunakan kata kunci return didalam functionnya
+-didalam blok function, untuk menghasilkan nilai tersebut kita harus menggunakan kata kunci return dan yang ingin kita hasilkan
+-dalam function hanya dapat mereturn 1 data kalau mau lebih bisa dibungkus dalam array
+-Return Value lebih dari satu pada tiap pengkondisian
+-dengan return juga bisa untuk menghentikan eksekusi suatu blok program  
+@OPTIONAL PARAMETER
+-Secara default function parameter itu optional artinya tidak wajib dimasukan valuenya
+-jika tidak ada valuenya secara default maka parameter tsb akan menghasilkan undefined
+-berbeda dengan bahasa lain yg parameter jika didefinisikan maka wajib di isi
+@DEFAULT PARAMETER
+-Kita bisa memberi default Value sebuah parameter
+-jika kita mengisi parameter degan undefined atau kosong makan akan dikirimkan default Value
+-namafunction(parameter1,parameter2="default Value"){}
+@REST PARAMETER
+-Fitur dimana kita bisa mengirim data sebanyak-banyaknya pada satu parameter, secara otomatis akan dikonversi menjadi array
+-Rest Parameter hanya boleh ada satu di satu function
+-Rest Parameter hanya boleh berada di posisi paling akhir sesuai jumlah parameter
+-sama juga seperti variabel argumen 
+    @Spread Syntax
+    -digunakan untuk merubah data array kedalam rest parameter
+    -kita bisa gunakan ...(titik tiga) diikuti dengan arraynya ketika memanggil function
+    -array = ...[value1,value2,dst]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.info("Hello" ||"") //diambil string pertama karena trutly
+        console.log(""||[])//diambil array kosong karena trutly
+        console.log("0"||0);//jika ada dua trutly maka yg pertama yg di ambil
+        console.log(null||undefined);//jika kedua falsy maka yang diambil yang terakhir
+
+        //Contoh Penggunaan
+        const person = {
+            firstName: "Maulana",
+            lastName: "Reza"
+        }
+        let name
+        name = person.firstName || person.lastName
+        console.log(name);
+
+        console.log("Hello" && "");//"" string kososng
+        console.log(""&&[]);//""falsy
+        console.log(0&&"NOL");//diambil 0 karena falsy
+    </script>
+
+</body>
+</html>
